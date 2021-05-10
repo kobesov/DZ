@@ -15,5 +15,9 @@ use Illuminate\Http\Request;
 
 Route::post("/signup/","UserController@signUp");
 Route::post("/signin/","UserController@signIn");
-Route::post("/signin/","UserController@output");
-Route::post("/signin/","UserController@reset_password");
+Route::post("/output/","UserController@output");
+Route::post("/reset_password/","UserController@reset_password");
+
+Route::post("/add_product/","ProductController@add_product");
+Route::post("/renewal_prod/","ProductController@renewal_prod");
+Route::post("/delete_prod/","ProductController@delete_prod");
